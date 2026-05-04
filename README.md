@@ -22,3 +22,14 @@ Victim Machine (Ubuntu) → Logs → Splunk Forwarder → Splunk SIEM
 index=* "Failed password"
 | rex "from (?<src_ip>\d+\.\d+\.\d+\.\d+)"
 | stats count by src_ip
+
+## Dashboard
+The Splunk dashboard includes:
+Brute-force monitoring
+Web attack detection
+Suspicious activity tracking
+
+## Tools Used
+Splunk Enterprise
+Kali Linux
+Ubuntu
