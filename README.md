@@ -18,7 +18,6 @@ Victim Machine (Ubuntu) → Logs → Splunk Forwarder → Splunk SIEM
 - Event correlation
 
 ## Example Query (Brute Force)
-```spl
 index=* "Failed password"
 | rex "from (?<src_ip>\d+\.\d+\.\d+\.\d+)"
 | stats count by src_ip
